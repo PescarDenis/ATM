@@ -1,0 +1,645 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Jun  5 10:13:04 2024
+# Process ID: 13948
+# Current directory: C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.runs/synth_1
+# Command line: vivado.exe -log State_coding.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source State_coding.tcl
+# Log file: C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.runs/synth_1/State_coding.vds
+# Journal file: C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.runs/synth_1\vivado.jou
+# Running On: PescarDenis, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16890 MB
+#-----------------------------------------------------------
+source State_coding.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 488.184 ; gain = 186.855
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/utils_1/imports/synth_1/State_coding.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/utils_1/imports/synth_1/State_coding.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top State_coding -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3384
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1341.008 ; gain = 441.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'State_coding' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:32]
+WARNING: [Synth 8-614] signal 'start' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:281]
+WARNING: [Synth 8-614] signal 'counter' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'Number_from_Pmod' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'start_verif' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'sum_at_pin' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'sum_to_deposit' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'end_greedy' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'display5_greedy' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'display10_greedy' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'display20_greedy' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'display50_greedy' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'display100_greedy' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'pin_saved1' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+WARNING: [Synth 8-614] signal 'pin_saved2' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:302]
+INFO: [Synth 8-3491] module 'PMOD' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:6' bound to instance 'c0' of component 'PMOD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:655]
+INFO: [Synth 8-638] synthesizing module 'PMOD' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:16]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:6' bound to instance 'C0' of component 'Decoder' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:18]
+	Parameter clk_freq bound to: 100000000 - type: integer 
+	Parameter stable_time bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:11]
+INFO: [Synth 8-3491] module 'clock_enable_debouncing_button' declared at 'C:/Users/pesca/Desktop/projects vivado/MPG/MPG.srcs/sources_1/new/clock_enable_debouncing_button.vhd:5' bound to instance 'clock_enable_generator' of component 'clock_enable_debouncing_button' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'clock_enable_debouncing_button' [C:/Users/pesca/Desktop/projects vivado/MPG/MPG.srcs/sources_1/new/clock_enable_debouncing_button.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'clock_enable_debouncing_button' (0#1) [C:/Users/pesca/Desktop/projects vivado/MPG/MPG.srcs/sources_1/new/clock_enable_debouncing_button.vhd:11]
+INFO: [Synth 8-3491] module 'DFF_Debouncing_Button' declared at 'C:/Users/pesca/Desktop/projects vivado/MPG/MPG.srcs/sources_1/new/DFF_Debouncing_Button.vhd:4' bound to instance 'Debouncing_FF0' of component 'DFF_Debouncing_Button' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'DFF_Debouncing_Button' [C:/Users/pesca/Desktop/projects vivado/MPG/MPG.srcs/sources_1/new/DFF_Debouncing_Button.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'DFF_Debouncing_Button' (0#1) [C:/Users/pesca/Desktop/projects vivado/MPG/MPG.srcs/sources_1/new/DFF_Debouncing_Button.vhd:12]
+INFO: [Synth 8-3491] module 'DFF_Debouncing_Button' declared at 'C:/Users/pesca/Desktop/projects vivado/MPG/MPG.srcs/sources_1/new/DFF_Debouncing_Button.vhd:4' bound to instance 'Debouncing_FF1' of component 'DFF_Debouncing_Button' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:43]
+INFO: [Synth 8-3491] module 'DFF_Debouncing_Button' declared at 'C:/Users/pesca/Desktop/projects vivado/MPG/MPG.srcs/sources_1/new/DFF_Debouncing_Button.vhd:4' bound to instance 'Debouncing_FF2' of component 'DFF_Debouncing_Button' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (0#1) [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:11]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/debounce.vhd:4' bound to instance 'debounce_keys' of component 'debounce' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (0#1) [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Decoder_keypad.vhd:18]
+INFO: [Synth 8-3491] module 'return_btn_pressed' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/return_btn_pressed.vhd:5' bound to instance 'C1' of component 'return_btn_pressed' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'return_btn_pressed' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/return_btn_pressed.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'return_btn_pressed' (0#1) [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/return_btn_pressed.vhd:15]
+INFO: [Synth 8-3491] module 'Freq_Divider' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Freq_div_counter.vhd:4' bound to instance 'C2' of component 'Freq_Divider' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'Freq_Divider' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Freq_div_counter.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'Freq_Divider' (0#1) [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Freq_div_counter.vhd:10]
+INFO: [Synth 8-3491] module 'Counter_states' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Counter_states.vhd:7' bound to instance 'C3' of component 'Counter_states' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'Counter_states' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Counter_states.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Counter_states' (0#1) [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Counter_states.vhd:18]
+INFO: [Synth 8-3491] module 'DMUX_REGISTER' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/DMUX.vhd:6' bound to instance 'C4' of component 'DMUX_REGISTER' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'DMUX_REGISTER' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/DMUX.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'DMUX_REGISTER' (0#1) [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/DMUX.vhd:15]
+INFO: [Synth 8-3491] module 'dmux_for_load_enable' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/dmux_for_load_enable.vhd:6' bound to instance 'C5' of component 'dmux_for_load_enable' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'dmux_for_load_enable' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/dmux_for_load_enable.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'dmux_for_load_enable' (0#1) [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/dmux_for_load_enable.vhd:15]
+INFO: [Synth 8-3491] module 'Register_load' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Register.vhd:8' bound to instance 'Reg_1' of component 'Register_load' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'Register_load' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Register.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Register_load' (0#1) [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Register.vhd:16]
+INFO: [Synth 8-3491] module 'Register_load' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Register.vhd:8' bound to instance 'Reg_2' of component 'Register_load' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:128]
+INFO: [Synth 8-3491] module 'Register_load' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Register.vhd:8' bound to instance 'Reg_3' of component 'Register_load' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:129]
+INFO: [Synth 8-3491] module 'Register_load' declared at 'C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/Register.vhd:8' bound to instance 'Reg_4' of component 'Register_load' [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'PMOD' (0#1) [C:/Users/pesca/Desktop/projects vivado/Pin_Keypad/Pin_Keypad.srcs/sources_1/new/PMOD.vhd:16]
+INFO: [Synth 8-3491] module 'Top_Module_Verif' declared at 'C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Top_Module_Verif.vhd:5' bound to instance 'c1' of component 'Top_Module_Verif' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:656]
+INFO: [Synth 8-638] synthesizing module 'Top_Module_Verif' [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Top_Module_Verif.vhd:14]
+INFO: [Synth 8-3491] module 'Counter_address' declared at 'C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Clock_divide_Rom.vhd:6' bound to instance 'C0' of component 'Counter_address' [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Top_Module_Verif.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Counter_address' [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Clock_divide_Rom.vhd:14]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Clock_divide_Rom.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Counter_address' (0#1) [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Clock_divide_Rom.vhd:14]
+INFO: [Synth 8-3491] module 'Verif_Pin' declared at 'C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Verif_Pin.vhd:7' bound to instance 'C1' of component 'Verif_Pin' [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Top_Module_Verif.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'Verif_Pin' [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Verif_Pin.vhd:15]
+WARNING: [Synth 8-614] signal 'ok' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Verif_Pin.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Verif_Pin' (0#1) [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Verif_Pin.vhd:15]
+INFO: [Synth 8-3491] module 'ROM_PIN' declared at 'C:/Users/pesca/Desktop/projects vivado/Ram_pin/Ram_pin.srcs/sources_1/new/ROM_PIN.vhd:6' bound to instance 'C3' of component 'ROM_PIN' [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Top_Module_Verif.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'ROM_PIN' [C:/Users/pesca/Desktop/projects vivado/Ram_pin/Ram_pin.srcs/sources_1/new/ROM_PIN.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'ROM_PIN' (0#1) [C:/Users/pesca/Desktop/projects vivado/Ram_pin/Ram_pin.srcs/sources_1/new/ROM_PIN.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Top_Module_Verif' (0#1) [C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Top_Module_Verif.vhd:14]
+INFO: [Synth 8-3491] module 'RAM_SOLD' declared at 'C:/Users/pesca/Desktop/projects vivado/Ram_pin/Ram_pin.srcs/sources_1/new/RAM_PIN.vhd:6' bound to instance 'c2' of component 'RAM_SOLD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:657]
+INFO: [Synth 8-638] synthesizing module 'RAM_SOLD' [C:/Users/pesca/Desktop/projects vivado/Ram_pin/Ram_pin.srcs/sources_1/new/RAM_PIN.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'RAM_SOLD' (0#1) [C:/Users/pesca/Desktop/projects vivado/Ram_pin/Ram_pin.srcs/sources_1/new/RAM_PIN.vhd:14]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/SSD.vhd:6' bound to instance 'c3' of component 'SSD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:658]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/SSD.vhd:14]
+INFO: [Synth 8-3491] module 'CLOCK_DIVIDER' declared at 'C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/CLOCK_DIVIDER.vhd:6' bound to instance 'c1' of component 'CLOCK_DIVIDER' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/SSD.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'CLOCK_DIVIDER' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/CLOCK_DIVIDER.vhd:11]
+WARNING: [Synth 8-614] signal 'COUNT' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/CLOCK_DIVIDER.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'CLOCK_DIVIDER' (0#1) [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/CLOCK_DIVIDER.vhd:11]
+INFO: [Synth 8-3491] module 'mux_anod' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/mux_anod.vhd:6' bound to instance 'c2' of component 'mux_anod' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/SSD.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'mux_anod' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/mux_anod.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_anod' (0#1) [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/mux_anod.vhd:11]
+INFO: [Synth 8-3491] module 'mux_catod' declared at 'C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:5' bound to instance 'C3' of component 'mux_catod' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/SSD.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'mux_catod' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:12]
+INFO: [Synth 8-3491] module 'DECODER_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/DECODER.vhd:5' bound to instance 'c1' of component 'DECODER_BCD' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'DECODER_BCD' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/DECODER.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'DECODER_BCD' (0#1) [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/DECODER.vhd:10]
+INFO: [Synth 8-3491] module 'DECODER_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/DECODER.vhd:5' bound to instance 'c2' of component 'DECODER_BCD' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:43]
+INFO: [Synth 8-3491] module 'DECODER_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/DECODER.vhd:5' bound to instance 'c3' of component 'DECODER_BCD' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:44]
+INFO: [Synth 8-3491] module 'DECODER_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/DECODER.vhd:5' bound to instance 'c4' of component 'DECODER_BCD' [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:45]
+WARNING: [Synth 8-614] signal 'BAR' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'C' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'P' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'digit1' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'E' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'O' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'F' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'I' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'digit2' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'r' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'U' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'n' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'digit3' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'null_catod' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'L' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'd' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+WARNING: [Synth 8-614] signal 'digit4' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'mux_catod' (0#1) [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/MUX_CATOD.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (0#1) [C:/Users/pesca/Desktop/projects vivado/SSD/SSD.srcs/sources_1/new/SSD.vhd:14]
+INFO: [Synth 8-3491] module 'Slow_Clock' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Slow_Clock.vhd:6' bound to instance 'c4' of component 'Slow_Clock' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:659]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clock' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Slow_Clock.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clock' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Slow_Clock.vhd:13]
+INFO: [Synth 8-3491] module 'sum_creator_deposit' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/sum_creation.vhd:7' bound to instance 'c5' of component 'sum_creator_deposit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:660]
+INFO: [Synth 8-638] synthesizing module 'sum_creator_deposit' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/sum_creation.vhd:23]
+INFO: [Synth 8-3491] module 'Freq_Divider_Counter' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Counter_div.vhd:7' bound to instance 'Freq_Divider' of component 'Freq_Divider_Counter' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/sum_creation.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'Freq_Divider_Counter' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Counter_div.vhd:12]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Counter_div.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Freq_Divider_Counter' (0#1) [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Counter_div.vhd:12]
+INFO: [Synth 8-3491] module 'button_debouncer' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:5' bound to instance 'Btn_DB_5' of component 'button_debouncer' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/sum_creation.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'button_debouncer' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:11]
+INFO: [Synth 8-3491] module 'Freq_Divider_db' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Freq_div_debouncer.vhd:7' bound to instance 'C0' of component 'Freq_Divider_db' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'Freq_Divider_db' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Freq_div_debouncer.vhd:12]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Freq_div_debouncer.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Freq_Divider_db' (0#1) [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Freq_div_debouncer.vhd:12]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/DFF.vhd:6' bound to instance 'C1' of component 'DFF' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/DFF.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (0#1) [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/DFF.vhd:13]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/DFF.vhd:6' bound to instance 'C2' of component 'DFF' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:34]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/DFF.vhd:6' bound to instance 'C3' of component 'DFF' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'button_debouncer' (0#1) [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:11]
+INFO: [Synth 8-3491] module 'button_debouncer' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:5' bound to instance 'Btn_DB_10' of component 'button_debouncer' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/sum_creation.vhd:65]
+INFO: [Synth 8-3491] module 'button_debouncer' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:5' bound to instance 'Btn_DB_20' of component 'button_debouncer' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/sum_creation.vhd:66]
+INFO: [Synth 8-3491] module 'button_debouncer' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:5' bound to instance 'Btn_DB_50' of component 'button_debouncer' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/sum_creation.vhd:67]
+INFO: [Synth 8-3491] module 'button_debouncer' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/debouncer.vhd:5' bound to instance 'Btn_DB_100' of component 'button_debouncer' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/sum_creation.vhd:68]
+INFO: [Synth 8-3491] module 'Converter_dec_to_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:7' bound to instance 'Dec_to_BCD' of component 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/sum_creation.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Converter_dec_to_BCD' (0#1) [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sum_creator_deposit' (0#1) [C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/sum_creation.vhd:23]
+INFO: [Synth 8-3491] module 'Update_Vault' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:6' bound to instance 'c6' of component 'Update_Vault' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:661]
+INFO: [Synth 8-638] synthesizing module 'Update_Vault' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:31]
+INFO: [Synth 8-3491] module 'counter_RAM_banknotes' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/counter_RAM_bancnotes.vhd:6' bound to instance 'c1' of component 'counter_RAM_banknotes' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'counter_RAM_banknotes' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/counter_RAM_bancnotes.vhd:14]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/counter_RAM_bancnotes.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'counter_RAM_banknotes' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/counter_RAM_bancnotes.vhd:14]
+INFO: [Synth 8-3491] module 'counter_RAM_banknotes' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/counter_RAM_bancnotes.vhd:6' bound to instance 'c2' of component 'counter_RAM_banknotes' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:207]
+INFO: [Synth 8-3491] module 'MUX_2_to_1' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/MUX_2_to_1.vhd:6' bound to instance 'mux_addr' of component 'MUX_2_to_1' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'MUX_2_to_1' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/MUX_2_to_1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'MUX_2_to_1' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/MUX_2_to_1.vhd:13]
+INFO: [Synth 8-3491] module 'Mux_2_to_1_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Mux_2_to_1_16bit.vhd:5' bound to instance 'mux_with_or_dep' of component 'Mux_2_to_1_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'Mux_2_to_1_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Mux_2_to_1_16bit.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2_to_1_16bit' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Mux_2_to_1_16bit.vhd:14]
+INFO: [Synth 8-3491] module 'MUX_8_to1' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/MUX_8_to1.vhd:5' bound to instance 'c3' of component 'MUX_8_to1' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'MUX_8_to1' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/MUX_8_to1.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'MUX_8_to1' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/MUX_8_to1.vhd:20]
+INFO: [Synth 8-3491] module 'MUX_8_to1' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/MUX_8_to1.vhd:5' bound to instance 'c4' of component 'MUX_8_to1' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:213]
+INFO: [Synth 8-3491] module 'RAM_VAULT' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/RAM_VAULT.vhd:6' bound to instance 'c5' of component 'RAM_VAULT' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'RAM_VAULT' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/RAM_VAULT.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'RAM_VAULT' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/RAM_VAULT.vhd:16]
+INFO: [Synth 8-3491] module 'DMUX_8_to1' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/DMUX_8_to1.vhd:6' bound to instance 'c6' of component 'DMUX_8_to1' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'DMUX_8_to1' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/DMUX_8_to1.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'DMUX_8_to1' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/DMUX_8_to1.vhd:19]
+INFO: [Synth 8-3491] module 'DMUX_8_to1_for_load' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/DMUX_8_to1_for_load.vhd:4' bound to instance 'c7' of component 'DMUX_8_to1_for_load' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'DMUX_8_to1_for_load' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/DMUX_8_to1_for_load.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'DMUX_8_to1_for_load' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/DMUX_8_to1_for_load.vhd:17]
+INFO: [Synth 8-3491] module 'Register_load_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:6' bound to instance 'Reg1' of component 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Register_load_16bit' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:14]
+INFO: [Synth 8-3491] module 'Register_load_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:6' bound to instance 'Reg2' of component 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:220]
+INFO: [Synth 8-3491] module 'Register_load_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:6' bound to instance 'Reg3' of component 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:221]
+INFO: [Synth 8-3491] module 'Register_load_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:6' bound to instance 'Reg4' of component 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:222]
+INFO: [Synth 8-3491] module 'Register_load_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:6' bound to instance 'Reg5' of component 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:223]
+INFO: [Synth 8-256] done synthesizing module 'Update_Vault' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Update_Vault.vhd:31]
+INFO: [Synth 8-3491] module 'Calculate_final_amount' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Calculate_final_amount.vhd:5' bound to instance 'c7' of component 'Calculate_final_amount' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:662]
+INFO: [Synth 8-638] synthesizing module 'Calculate_final_amount' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Calculate_final_amount.vhd:14]
+INFO: [Synth 8-3491] module 'Converter_BCD_to_dec' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Converter_BCD_to_dec.vhd:6' bound to instance 'c0' of component 'Converter_BCD_to_dec' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Calculate_final_amount.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'Converter_BCD_to_dec' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Converter_BCD_to_dec.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Converter_BCD_to_dec' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Converter_BCD_to_dec.vhd:13]
+INFO: [Synth 8-3491] module 'Converter_BCD_to_dec' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Converter_BCD_to_dec.vhd:6' bound to instance 'c1' of component 'Converter_BCD_to_dec' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Calculate_final_amount.vhd:38]
+INFO: [Synth 8-3491] module 'Converter_dec_to_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:7' bound to instance 'c2' of component 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Calculate_final_amount.vhd:39]
+WARNING: [Synth 8-614] signal 'sum_temp' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Calculate_final_amount.vhd:41]
+WARNING: [Synth 8-614] signal 'final_sum' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Calculate_final_amount.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Calculate_final_amount' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Calculate_final_amount.vhd:14]
+INFO: [Synth 8-3491] module 'Verif_withdrawal_module' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Verif_withdrawl.vhd:6' bound to instance 'c8' of component 'Verif_withdrawal_module' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:663]
+INFO: [Synth 8-638] synthesizing module 'Verif_withdrawal_module' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Verif_withdrawl.vhd:19]
+INFO: [Synth 8-3491] module 'Converter_BCD_to_dec' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Converter_BCD_to_dec.vhd:6' bound to instance 'c0' of component 'Converter_BCD_to_dec' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Verif_withdrawl.vhd:39]
+INFO: [Synth 8-3491] module 'Converter_BCD_to_dec' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Converter_BCD_to_dec.vhd:6' bound to instance 'c1' of component 'Converter_BCD_to_dec' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Verif_withdrawl.vhd:40]
+INFO: [Synth 8-3491] module 'Converter_dec_to_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:7' bound to instance 'c2' of component 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Verif_withdrawl.vhd:41]
+WARNING: [Synth 8-614] signal 'decimal2' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Verif_withdrawl.vhd:43]
+WARNING: [Synth 8-614] signal 'subtract_temp' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Verif_withdrawl.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Verif_withdrawal_module' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Verif_withdrawl.vhd:19]
+INFO: [Synth 8-3491] module 'Top_Module_Verif' declared at 'C:/Users/pesca/Desktop/projects vivado/Verif_Pin/Verif_Pin.srcs/sources_1/new/Top_Module_Verif.vhd:5' bound to instance 'c9' of component 'Top_Module_Verif' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:664]
+INFO: [Synth 8-3491] module 'Top_Module_Transfer' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Top_Module_Transfer.vhd:6' bound to instance 'c10' of component 'Top_Module_Transfer' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:665]
+INFO: [Synth 8-638] synthesizing module 'Top_Module_Transfer' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Top_Module_Transfer.vhd:15]
+INFO: [Synth 8-3491] module 'Converter_BCD_to_dec' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Converter_BCD_to_dec.vhd:6' bound to instance 'c0' of component 'Converter_BCD_to_dec' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Top_Module_Transfer.vhd:40]
+INFO: [Synth 8-3491] module 'Converter_BCD_to_dec' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Converter_BCD_to_dec.vhd:6' bound to instance 'c1' of component 'Converter_BCD_to_dec' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Top_Module_Transfer.vhd:41]
+INFO: [Synth 8-3491] module 'Converter_BCD_to_dec' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Converter_BCD_to_dec.vhd:6' bound to instance 'c2' of component 'Converter_BCD_to_dec' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Top_Module_Transfer.vhd:42]
+INFO: [Synth 8-3491] module 'Converter_dec_to_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:7' bound to instance 'c3' of component 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Top_Module_Transfer.vhd:43]
+INFO: [Synth 8-3491] module 'Converter_dec_to_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:7' bound to instance 'c4' of component 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Top_Module_Transfer.vhd:44]
+WARNING: [Synth 8-614] signal 'update_sum2_decimal' is read in the process but is not in the sensitivity list [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Top_Module_Transfer.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Top_Module_Transfer' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Top_Module_Transfer.vhd:15]
+INFO: [Synth 8-3491] module 'greedy_banknotes' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Withdrawal_Greedy_display.vhd:6' bound to instance 'c11' of component 'greedy_banknotes' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:666]
+INFO: [Synth 8-638] synthesizing module 'greedy_banknotes' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Withdrawal_Greedy_display.vhd:29]
+INFO: [Synth 8-3491] module 'Converter_BCD_to_dec' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Converter_BCD_to_dec.vhd:6' bound to instance 'c0' of component 'Converter_BCD_to_dec' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Withdrawal_Greedy_display.vhd:55]
+INFO: [Synth 8-3491] module 'Converter_dec_to_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:7' bound to instance 'c1' of component 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Withdrawal_Greedy_display.vhd:56]
+INFO: [Synth 8-3491] module 'Converter_dec_to_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:7' bound to instance 'c2' of component 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Withdrawal_Greedy_display.vhd:57]
+INFO: [Synth 8-3491] module 'Converter_dec_to_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:7' bound to instance 'c3' of component 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Withdrawal_Greedy_display.vhd:58]
+INFO: [Synth 8-3491] module 'Converter_dec_to_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:7' bound to instance 'c4' of component 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Withdrawal_Greedy_display.vhd:59]
+INFO: [Synth 8-3491] module 'Converter_dec_to_BCD' declared at 'C:/Users/pesca/Desktop/projects vivado/sum_deposit/sum_deposit.srcs/sources_1/new/Converter_dec_to_BCD.vhd:7' bound to instance 'c5' of component 'Converter_dec_to_BCD' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Withdrawal_Greedy_display.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'greedy_banknotes' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Withdrawal_Greedy_display.vhd:29]
+INFO: [Synth 8-3491] module 'save_greedy_values' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/save_greedy_values.vhd:5' bound to instance 'c12' of component 'save_greedy_values' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:667]
+INFO: [Synth 8-638] synthesizing module 'save_greedy_values' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/save_greedy_values.vhd:21]
+INFO: [Synth 8-3491] module 'Register_load_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:6' bound to instance 'reg1' of component 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/save_greedy_values.vhd:33]
+INFO: [Synth 8-3491] module 'Register_load_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:6' bound to instance 'reg2' of component 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/save_greedy_values.vhd:34]
+INFO: [Synth 8-3491] module 'Register_load_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:6' bound to instance 'reg3' of component 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/save_greedy_values.vhd:35]
+INFO: [Synth 8-3491] module 'Register_load_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:6' bound to instance 'reg4' of component 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/save_greedy_values.vhd:36]
+INFO: [Synth 8-3491] module 'Register_load_16bit' declared at 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Register_load_16bit.vhd:6' bound to instance 'reg5' of component 'Register_load_16bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/save_greedy_values.vhd:37]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'save_greedy_values' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/save_greedy_values.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'Reg_hold_greedy' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Reg_hold_greedy.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Reg_hold_greedy' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Reg_hold_greedy.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'Mux_2_to_1_1bit' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Mux_2_to_1_1bit.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2_to_1_1bit' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/Mux_2_to_1_1bit.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'State_coding' (0#1) [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:32]
+WARNING: [Synth 8-7129] Port Reset in module Update_Vault is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1465.250 ; gain = 565.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1465.250 ; gain = 565.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1465.250 ; gain = 565.891
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1465.250 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/pesca/Desktop/projects vivado/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/pesca/Desktop/projects vivado/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/pesca/Desktop/projects vivado/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/State_coding_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/State_coding_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1561.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1561.215 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1561.215 ; gain = 661.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1561.215 ; gain = 661.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1561.215 ; gain = 661.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'columns_reg' in module 'Decoder'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'State_coding'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                           000001 |                             1111
+                 iSTATE1 |                           000010 |                             0111
+                 iSTATE2 |                           000100 |                             1011
+                 iSTATE3 |                           001000 |                             1101
+                 iSTATE4 |                           010000 |                             1110
+                  iSTATE |                           100000 |                             0011
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'columns_reg' using encoding 'one-hot' in module 'Decoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            01111 |                            00000
+                    init |                            10111 |                            00001
+                pin_afis |                            10001 |                            00010
+                intr_pin |                            01100 |                            00011
+                 acc_pin |                            01101 |                            00101
+                      op |                            11000 |                            00110
+              print_sold |                            11101 |                            00111
+                 deposit |                            11011 |                            01000
+             acc_deposit |                            11110 |                            01001
+             err_deposit |                            11010 |                            01010
+              withdrawal |                            00111 |                            01100
+          acc_withdrawal |                            00010 |                            01110
+                   dont1 |                            00011 |                            11010
+                 print_5 |                            10110 |                            10101
+                   dont2 |                            10100 |                            11011
+                print_10 |                            10101 |                            10110
+                   dont3 |                            00100 |                            11100
+                print_20 |                            00101 |                            10111
+                   dont4 |                            00000 |                            11101
+                print_50 |                            00001 |                            11000
+                   dont5 |                            11100 |                            11110
+               print_100 |                            11001 |                            11001
+          err_withdrawal |                            00110 |                            01101
+                transfer |                            10011 |                            01111
+                acc_pin2 |                            10000 |                            10001
+           intr_transfer |                            01010 |                            10010
+            acc_transfer |                            01000 |                            10011
+                     aop |                            01001 |                            01011
+            err_transfer |                            01011 |                            10100
+                err_pin2 |                            10010 |                            10000
+                 err_pin |                            01110 |                            00100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'State_coding'
+WARNING: [Synth 8-327] inferring latch for variable 'pin_saved2_reg' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:542]
+WARNING: [Synth 8-327] inferring latch for variable 'pin_saved1_reg' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:342]
+WARNING: [Synth 8-327] inferring latch for variable 'transfer_amount_reg' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:578]
+WARNING: [Synth 8-327] inferring latch for variable 'sum1_reg' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:356]
+WARNING: [Synth 8-327] inferring latch for variable 'sum2_reg' [C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.srcs/sources_1/new/States.vhd:557]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1561.215 ; gain = 661.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'reg_hold_deposit' (Reg_hold_greedy) to 'reg_hold_mode'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 38    
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 46    
+	   3 Input   16 Bit       Adders := 5     
+	   2 Input   16 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 42    
+	   9 Input    4 Bit       Adders := 1     
+	   5 Input    3 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 2     
+	   3 Input    2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 18    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 83    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 55    
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 46    
+	   2 Input   16 Bit        Muxes := 12    
+	   6 Input   16 Bit        Muxes := 2     
+	   8 Input   16 Bit        Muxes := 9     
+	  31 Input   16 Bit        Muxes := 1     
+	   6 Input   15 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 11    
+	   8 Input    7 Bit        Muxes := 4     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	  68 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 82    
+	   6 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 4     
+	  31 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 4     
+	   2 Input    3 Bit        Muxes := 5     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 5     
+	  10 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 10    
+	  31 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP sum_to_dec0, operation Mode is: C-A*(B:0x64).
+DSP Report: operator sum_to_dec0 is absorbed into DSP sum_to_dec0.
+DSP Report: operator sum_to_dec1 is absorbed into DSP sum_to_dec0.
+DSP Report: Generating DSP sum_to_dec0, operation Mode is: C-A*(B:0x32).
+DSP Report: operator sum_to_dec0 is absorbed into DSP sum_to_dec0.
+DSP Report: operator sum_to_dec1 is absorbed into DSP sum_to_dec0.
+DSP Report: Generating DSP sum_to_dec0, operation Mode is: C-A*(B:0x14).
+DSP Report: operator sum_to_dec0 is absorbed into DSP sum_to_dec0.
+DSP Report: operator sum_to_dec1 is absorbed into DSP sum_to_dec0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:42 . Memory (MB): peak = 1701.137 ; gain = 801.777
+---------------------------------------------------------------------------------
+ Sort Area is greedy_banknotes__GC0 sum_to_dec0_0 : 0 0 : 633 633 : Used 1 time 0
+ Sort Area is greedy_banknotes__GC0 sum_to_dec0_2 : 0 0 : 463 463 : Used 1 time 0
+ Sort Area is greedy_banknotes__GC0 sum_to_dec0_4 : 0 0 : 453 453 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------+------------------+-----------+----------------------+----------------+
+|Module Name  | RTL Object       | Inference | Size (Depth x Width) | Primitives     | 
++-------------+------------------+-----------+----------------------+----------------+
+|State_coding | c6/c5/memory_reg | Implied   | 8 x 16               | RAM16X1S x 16  | 
+|State_coding | c2/memory_reg    | Implied   | 8 x 16               | RAM16X1S x 16  | 
++-------------+------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|greedy_banknotes | C-A*(B:0x64) | 17     | 8      | 17     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|greedy_banknotes | C-A*(B:0x32) | 17     | 7      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|greedy_banknotes | C-A*(B:0x14) | 17     | 6      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:52 . Memory (MB): peak = 1701.137 ; gain = 801.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:53 . Memory (MB): peak = 1701.137 ; gain = 801.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-------------+------------------+-----------+----------------------+----------------+
+|Module Name  | RTL Object       | Inference | Size (Depth x Width) | Primitives     | 
++-------------+------------------+-----------+----------------------+----------------+
+|State_coding | c6/c5/memory_reg | Implied   | 8 x 16               | RAM16X1S x 16  | 
+|State_coding | c2/memory_reg    | Implied   | 8 x 16               | RAM16X1S x 16  | 
++-------------+------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:02:00 . Memory (MB): peak = 1732.137 ; gain = 832.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:02:07 . Memory (MB): peak = 1738.074 ; gain = 838.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:02:07 . Memory (MB): peak = 1738.074 ; gain = 838.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:02:08 . Memory (MB): peak = 1738.074 ; gain = 838.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:02:09 . Memory (MB): peak = 1738.074 ; gain = 838.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:02:09 . Memory (MB): peak = 1738.074 ; gain = 838.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:02:09 . Memory (MB): peak = 1738.074 ; gain = 838.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|greedy_banknotes | C-(A'*B)    | 16     | 7      | 16     | -      | 32     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|greedy_banknotes | C-(A'*B)    | 16     | 6      | 48     | -      | 32     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
+|greedy_banknotes | C-(A'*B)    | 16     | 5      | 48     | -      | 32     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |  5354|
+|3     |DSP48E1  |     3|
+|4     |LUT1     |   603|
+|5     |LUT2     |  3722|
+|6     |LUT3     |  5692|
+|7     |LUT4     |  6104|
+|8     |LUT5     |  4636|
+|9     |LUT6     | 12272|
+|10    |MUXF7    |     2|
+|11    |RAM16X1S |    32|
+|12    |FDCE     |   201|
+|13    |FDPE     |     5|
+|14    |FDRE     |   766|
+|15    |LD       |    80|
+|16    |IBUF     |    16|
+|17    |OBUF     |    24|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:02:09 . Memory (MB): peak = 1738.074 ; gain = 838.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:02:07 . Memory (MB): peak = 1738.074 ; gain = 742.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:02:09 . Memory (MB): peak = 1738.074 ; gain = 838.715
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.528 . Memory (MB): peak = 1750.324 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5471 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1766.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 112 instances were transformed.
+  LD => LDCE: 80 instances
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+
+Synth Design complete | Checksum: b2eb3dd9
+INFO: [Common 17-83] Releasing license: Synthesis
+219 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:02:22 . Memory (MB): peak = 1766.430 ; gain = 1275.285
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1766.430 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/pesca/Desktop/projects vivado/State_coding/State_coding.runs/synth_1/State_coding.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file State_coding_utilization_synth.rpt -pb State_coding_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  5 10:15:38 2024...

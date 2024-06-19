@@ -1,0 +1,276 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date             : Wed Jun  5 10:18:22 2024
+| Host             : PescarDenis running 64-bit major release  (build 9200)
+| Command          : report_power -file State_coding_power_routed.rpt -pb State_coding_power_summary_routed.pb -rpx State_coding_power_routed.rpx
+| Design           : State_coding
+| Device           : xc7a100tcsg324-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-----------------------------------+
+| Total On-Chip Power (W)  | 961.033 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                      |
+| Power Budget Margin (W)  | NA                                |
+| Dynamic (W)              | 960.236                           |
+| Device Static (W)        | 0.797                             |
+| Effective TJA (C/W)      | 4.6                               |
+| Max Ambient (C)          | 0.0                               |
+| Junction Temperature (C) | 125.0                             |
+| Confidence Level         | Low                               |
+| Setting File             | ---                               |
+| Simulation Activity File | ---                               |
+| Design Nets Matched      | NA                                |
++--------------------------+-----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic              |   478.951 |    39504 |       --- |             --- |
+|   LUT as Logic           |   450.142 |    28946 |     63400 |           45.66 |
+|   CARRY4                 |    28.502 |     5354 |     15850 |           33.78 |
+|   Register               |     0.274 |     1052 |    126800 |            0.83 |
+|   LUT as Distributed RAM |     0.020 |       32 |     19000 |            0.17 |
+|   BUFG                   |     0.012 |        3 |        32 |            9.38 |
+|   F7/F8 Muxes            |     0.002 |        2 |     63400 |           <0.01 |
+|   Others                 |     0.000 |      234 |       --- |             --- |
+| Signals                  |   455.697 |    34445 |       --- |             --- |
+| DSPs                     |     2.670 |        3 |       240 |            1.25 |
+| I/O                      |    22.919 |       40 |       210 |           19.05 |
+| Static Power             |     0.797 |          |           |                 |
+| Total                    |   961.033 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |   937.940 |     937.377 |      0.563 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.931 |       0.838 |      0.093 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     6.474 |       6.470 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------+-----------+
+| Name                                 | Power (W) |
++--------------------------------------+-----------+
+| State_coding                         |   960.236 |
+|   c0                                 |     7.284 |
+|     C0                               |     2.818 |
+|       row_debounce[0].debounce_keys  |     0.124 |
+|       row_debounce[10].debounce_keys |     0.125 |
+|       row_debounce[11].debounce_keys |     0.122 |
+|       row_debounce[12].debounce_keys |     0.112 |
+|       row_debounce[13].debounce_keys |     0.124 |
+|       row_debounce[14].debounce_keys |     0.131 |
+|       row_debounce[15].debounce_keys |     0.123 |
+|       row_debounce[1].debounce_keys  |     0.887 |
+|       row_debounce[2].debounce_keys  |     0.119 |
+|       row_debounce[3].debounce_keys  |     0.131 |
+|       row_debounce[4].debounce_keys  |     0.103 |
+|       row_debounce[5].debounce_keys  |     0.119 |
+|       row_debounce[6].debounce_keys  |     0.113 |
+|       row_debounce[7].debounce_keys  |     0.112 |
+|       row_debounce[8].debounce_keys  |     0.114 |
+|       row_debounce[9].debounce_keys  |     0.110 |
+|     C2                               |     0.108 |
+|     C3                               |     0.095 |
+|     Reg_1                            |     0.046 |
+|     Reg_2                            |     0.071 |
+|     Reg_3                            |     0.070 |
+|     Reg_4                            |     3.873 |
+|   c1                                 |     0.469 |
+|     C0                               |     0.098 |
+|   c10                                |   195.951 |
+|     c0                               |    92.256 |
+|     c1                               |    77.740 |
+|     c2                               |     0.313 |
+|     c3                               |    13.227 |
+|     c4                               |    12.415 |
+|   c11                                |   428.151 |
+|     c0                               |   405.621 |
+|     c1                               |     1.557 |
+|     c2                               |     1.649 |
+|     c3                               |     1.571 |
+|     c4                               |     6.522 |
+|     c5                               |     7.159 |
+|   c12                                |     2.229 |
+|     reg1                             |     0.032 |
+|     reg2                             |     0.019 |
+|     reg3                             |     0.598 |
+|     reg4                             |     0.024 |
+|     reg5                             |     1.556 |
+|   c13                                |     0.300 |
+|     reg2                             |     0.063 |
+|     reg5                             |     0.237 |
+|   c2                                 |     6.229 |
+|     memory_reg_0_7_0_0               |     0.003 |
+|     memory_reg_0_7_10_10             |     0.008 |
+|     memory_reg_0_7_11_11             |     0.005 |
+|     memory_reg_0_7_12_12             |     0.007 |
+|     memory_reg_0_7_13_13             |     0.007 |
+|     memory_reg_0_7_14_14             |     0.007 |
+|     memory_reg_0_7_15_15             |     0.004 |
+|     memory_reg_0_7_1_1               |     0.005 |
+|     memory_reg_0_7_2_2               |     0.004 |
+|     memory_reg_0_7_3_3               |     0.005 |
+|     memory_reg_0_7_4_4               |     0.006 |
+|     memory_reg_0_7_5_5               |     0.005 |
+|     memory_reg_0_7_6_6               |     0.005 |
+|     memory_reg_0_7_7_7               |     0.004 |
+|     memory_reg_0_7_8_8               |     0.009 |
+|     memory_reg_0_7_9_9               |     0.007 |
+|   c3                                 |     1.194 |
+|     c1                               |     0.057 |
+|   c4                                 |     0.120 |
+|   c5                                 |    92.177 |
+|     Btn_DB_10                        |     0.165 |
+|       C1                             |     0.004 |
+|       C2                             |     0.158 |
+|       C3                             |     0.004 |
+|     Btn_DB_100                       |     0.027 |
+|       C1                             |     0.021 |
+|       C2                             |     0.004 |
+|       C3                             |     0.002 |
+|     Btn_DB_20                        |     0.054 |
+|       C1                             |     0.004 |
+|       C2                             |     0.046 |
+|       C3                             |     0.004 |
+|     Btn_DB_5                         |     0.141 |
+|       C0                             |     0.052 |
+|       C1                             |     0.004 |
+|       C2                             |     0.081 |
+|       C3                             |     0.004 |
+|     Btn_DB_50                        |     0.044 |
+|       C1                             |     0.005 |
+|       C2                             |     0.036 |
+|       C3                             |     0.003 |
+|     Dec_to_BCD                       |    11.964 |
+|     Freq_Divider                     |     0.059 |
+|   c6                                 |     2.895 |
+|     Reg1                             |     0.529 |
+|     Reg2                             |     0.353 |
+|     Reg3                             |     0.206 |
+|     Reg4                             |     0.153 |
+|     Reg5                             |     0.120 |
+|     c1                               |     0.704 |
+|     c2                               |     0.112 |
+|     c5                               |     0.405 |
+|       memory_reg_0_7_0_0             |     0.018 |
+|       memory_reg_0_7_10_10           |     0.017 |
+|       memory_reg_0_7_11_11           |     0.018 |
+|       memory_reg_0_7_12_12           |     0.019 |
+|       memory_reg_0_7_13_13           |     0.021 |
+|       memory_reg_0_7_14_14           |     0.021 |
+|       memory_reg_0_7_15_15           |     0.023 |
+|       memory_reg_0_7_1_1             |     0.020 |
+|       memory_reg_0_7_2_2             |     0.021 |
+|       memory_reg_0_7_3_3             |     0.018 |
+|       memory_reg_0_7_4_4             |     0.017 |
+|       memory_reg_0_7_5_5             |     0.018 |
+|       memory_reg_0_7_6_6             |     0.020 |
+|       memory_reg_0_7_7_7             |     0.016 |
+|       memory_reg_0_7_8_8             |     0.017 |
+|       memory_reg_0_7_9_9             |     0.019 |
+|   c7                                 |    92.075 |
+|     c0                               |     3.179 |
+|     c1                               |    76.278 |
+|     c2                               |    12.618 |
+|   c8                                 |   106.969 |
+|     c0                               |     3.407 |
+|     c1                               |    90.253 |
+|     c2                               |    13.308 |
+|   c9                                 |     0.119 |
+|     C0                               |     0.119 |
+|   reg_hold_deposit                   |     0.030 |
+|   reg_hold_withdrawal                |     0.003 |
++--------------------------------------+-----------+
+
+

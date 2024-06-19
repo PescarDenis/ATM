@@ -1,0 +1,135 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date         : Wed Jun  5 10:16:54 2024
+| Host         : PescarDenis running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file State_coding_control_sets_placed.rpt
+| Design       : State_coding
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    57 |
+|    Minimum number of control sets                        |    57 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   164 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    57 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |    12 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    41 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             240 |           93 |
+| No           | No                    | Yes                    |               8 |            6 |
+| No           | Yes                   | No                     |             346 |           92 |
+| Yes          | No                    | No                     |             101 |           43 |
+| Yes          | No                    | Yes                    |             198 |           77 |
+| Yes          | Yes                   | No                     |             159 |           42 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|         Clock Signal        |                                 Enable Signal                                |                                    Set/Reset Signal                                    | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  c0/C2/CLK                  |                                                                              | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                1 |              3 |         3.00 |
+|  c3/c1/CLK                  |                                                                              |                                                                                        |                2 |              3 |         1.50 |
+|  c0/C2/CLK                  | c0/C3/E[0]                                                                   | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                2 |              4 |         2.00 |
+|  c0/C2/CLK                  | c0/C3/Carry_reg_3[0]                                                         | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                2 |              4 |         2.00 |
+|  c0/C2/CLK                  | c0/C3/Carry_reg_2[0]                                                         | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                1 |              4 |         4.00 |
+|  c0/C2/CLK                  | c0/C3/Carry_reg_4[0]                                                         | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG              | c0/C0/keys_int[0]_i_1_n_0                                                    | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG              | c0/C0/keys_int[2]_i_1_n_0                                                    | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG              | c0/C0/keys_int[10]_i_1_n_0                                                   | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG              | c0/C0/keys_int[3]_i_1_n_0                                                    | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG              | c5/Btn_DB_5/C0/S[0]                                                          |                                                                                        |                3 |              5 |         1.67 |
+|  slow_clk_BUFG              |                                                                              | FSM_sequential_current_state[4]_i_2_n_0                                                |                5 |              5 |         1.00 |
+|  CLK_IBUF_BUFG              | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/E[0]                      | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/SR[0]                               |                2 |              5 |         2.50 |
+|  CLK_IBUF_BUFG              | c0/C0/FSM_onehot_columns[5]_i_1_n_0                                          | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/AR[0]                               |                2 |              6 |         3.00 |
+|  slow_clk_BUFG              |                                                                              |                                                                                        |                6 |             11 |         1.83 |
+|  slow_clk_BUFG              | c6/c2/count_reg[2]_1                                                         |                                                                                        |                7 |             16 |         2.29 |
+|  slow_clk_BUFG              | c6/c2/LD                                                                     |                                                                                        |                5 |             16 |         3.20 |
+|  slow_clk_BUFG              | c6/c2/count_reg[1]_1                                                         |                                                                                        |                5 |             16 |         3.20 |
+|  slow_clk_BUFG              | c6/c2/count_reg[1]_2                                                         |                                                                                        |                6 |             16 |         2.67 |
+|  slow_clk_BUFG              | c6/c2/count_reg[2]_2                                                         |                                                                                        |                7 |             16 |         2.29 |
+|  slow_clk_BUFG              | final_amount                                                                 |                                                                                        |               10 |             16 |         1.60 |
+|  sum2__0                    |                                                                              |                                                                                        |                5 |             16 |         3.20 |
+|  sum1_reg[15]_i_1_n_0       |                                                                              |                                                                                        |                8 |             16 |         2.00 |
+|  Freq_Divider/count_reg[24] | c5/Btn_DB_10/C2/count_10                                                     | c5/Reset_deposit                                                                       |                4 |             16 |         4.00 |
+|  Freq_Divider/count_reg[24] | c5/Btn_DB_100/C1/count_100                                                   | c5/Reset_deposit                                                                       |                4 |             16 |         4.00 |
+|  Freq_Divider/count_reg[24] | c5/Btn_DB_20/C2/count_20                                                     | c5/Reset_deposit                                                                       |                4 |             16 |         4.00 |
+|  Freq_Divider/count_reg[24] | c5/Btn_DB_5/C2/DI[0]                                                         | c5/Reset_deposit                                                                       |                4 |             16 |         4.00 |
+|  pin_saved2__0              |                                                                              |                                                                                        |                5 |             16 |         3.20 |
+|  Freq_Divider/count_reg[24] | c5/Btn_DB_50/C2/count_50                                                     | c5/Reset_deposit                                                                       |                4 |             16 |         4.00 |
+|  pin_saved1__0              |                                                                              |                                                                                        |                5 |             16 |         3.20 |
+|  transfer_amount__0         |                                                                              |                                                                                        |                7 |             16 |         2.29 |
+|  slow_clk_BUFG              | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/begin_update_RAM          |                                                                                        |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG              | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/FSM_onehot_columns_reg[0] | c0/C0/row_debounce[1].debounce_keys/Debouncing_FF1/FSM_sequential_current_state_reg[0] |                4 |             16 |         4.00 |
+|  slow_clk_BUFG              | reg_hold_deposit/ctrl_update                                                 |                                                                                        |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[14].debounce_keys/clock_enable_generator/geqOp                      |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C2/geqOp                                                                            |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[3].debounce_keys/clock_enable_generator/geqOp                       |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[4].debounce_keys/clock_enable_generator/geqOp                       |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[5].debounce_keys/clock_enable_generator/geqOp                       |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[6].debounce_keys/clock_enable_generator/geqOp                       |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[7].debounce_keys/clock_enable_generator/geqOp                       |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[9].debounce_keys/clock_enable_generator/geqOp                       |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[15].debounce_keys/clock_enable_generator/geqOp                      |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[1].debounce_keys/clock_enable_generator/geqOp                       |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[2].debounce_keys/clock_enable_generator/geqOp                       |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c4/geqOp                                                                               |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[0].debounce_keys/clock_enable_generator/geqOp                       |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[10].debounce_keys/clock_enable_generator/geqOp                      |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[11].debounce_keys/clock_enable_generator/geqOp                      |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[12].debounce_keys/clock_enable_generator/geqOp                      |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[13].debounce_keys/clock_enable_generator/geqOp                      |                5 |             19 |         3.80 |
+|  CLK_IBUF_BUFG              |                                                                              | c0/C0/row_debounce[8].debounce_keys/clock_enable_generator/geqOp                       |                5 |             19 |         3.80 |
+|  Freq_Divider/count_reg[24] | c5/Btn_DB_10/C2/sum_int                                                      | c5/Reset_deposit                                                                       |                8 |             26 |         3.25 |
+|  slow_clk_BUFG              | start_IBUF                                                                   | counter0                                                                               |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG              |                                                                              |                                                                                        |               55 |            146 |         2.65 |
+|  slow_clk_BUFG              | c11/c0/E[0]                                                                  | c13/reg5/AR[0]                                                                         |               63 |            160 |         2.54 |
++-----------------------------+------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+
